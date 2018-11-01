@@ -1,0 +1,4 @@
+repository/*
+nginx-config/*
+!repository/index.php
+!nginx-config/default

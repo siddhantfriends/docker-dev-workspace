@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    workspace:
+        container_name: workspace
+        build: ./workspace
+        volumes:
+            - C:\docker\repository:/var/www/html
+            - C:\docker\nginx-config:/etc/nginx/sites-available
+            - C:\docker\nginx-config:/etc/nginx/sites-enabled
+        ports:
+            - 80:80
+        working_dir: /var/www/html
+        command: service php5.6-fpm start && service nginx start
+        tty: true
