@@ -1,4 +1,4 @@
 repository/*
 nginx-config/*
-!repository/index.php
-!nginx-config/default
+!repository/phpinfo/
+!nginx-config/phpinfo.test
