@@ -2,3 +2,4 @@ repository/*
 nginx-config/*
 !repository/phpinfo/
 !nginx-config/phpinfo.test
+.DS_Store
